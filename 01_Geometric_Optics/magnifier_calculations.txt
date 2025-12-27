@@ -1,0 +1,39 @@
+# Exercise 1.1: Simple Magnifier Design
+
+## Problem Statement
+Design a plano-convex lens to act as a 5× magnifier (magnifying glass). Assume the eye is relaxed (image at infinity).
+
+## Assumptions
+- Glass: N‑BK7 (nd = 1.5168, Vd = 64.17)
+- Thin‑lens approximation.
+- Lens is plano‑convex: one flat surface (R2 = ∞), one convex surface (R1 = R).
+- Angular magnification formula for relaxed eye: M = 25 cm / f.
+
+## Calculations
+
+### 1. Focal Length from Magnification
+M = 5
+f = 25 cm / M = 25 cm / 5 = 5 cm = 50 mm.
+
+### 2. Lensmaker's Formula for Plano‑Convex Lens
+1/f = (n - 1) * (1/R1 - 1/R2)
+Since R2 = ∞, 1/R2 = 0.
+Thus: 1/f = (n - 1) / R
+Rearranging: R = (n - 1) * f
+
+### 3. Radius of Curvature
+n = 1.5168
+R = (1.5168 - 1) * 50 mm = 0.5168 * 50 mm = 25.84 mm.
+
+## Result
+Required radius of curvature for the convex surface: **R ≈ 25.8 mm** (rounded to one decimal).
+
+## Design Parameters
+- Focal length: 50 mm
+- Glass: N‑BK7
+- Lens shape: plano‑convex, convex side facing the object (or eye, depending on orientation).
+- Center thickness: Not specified; thin‑lens approximation valid if thickness ≪ R.
+
+## Notes
+- For a real magnifier, the lens would be placed such that the object is at the focal point (f = 50 mm) from the lens.
+- Chromatic aberration may be noticeable due to moderate dispersion (Vd = 64.17); achromatic doublet could be considered for improved performance.
